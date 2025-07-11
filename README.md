@@ -19,6 +19,9 @@ Each solution includes:
 | 3 | [Pascal’s Triangle - Full Triangle](codes/pascaltriangle.cpp) | Brute + Iterative | O(n²) | O(n²) | Nested loops using nCr |
 | 4 | [Majority Element (> ⌊n/3⌋ times)](codes/majorityelementnby3better.cpp) | Better | O(n) | O(n) | Hash Map |
 | 5 | [Majority Element (> ⌊n/3⌋ times)](codes/majorityelementnby3optimal.cpp) | Optimal | O(n) | O(1) | Extended Moore's Voting Algorithm |
+| 6 | [3Sum](codes/3sumbruteforce.cpp) | Brute Force | O(n³) | O(1) | Triple loop + Set |
+| 7 | [3Sum](codes/3sumbetter.cpp) | Better | O(n²) | O(n) | Hashing |
+| 8 | [3Sum](codes/3sumoptimal.cpp) | Optimal | O(n²) | O(1) | Sorting + Two Pointers |
 
 ---
 
@@ -47,6 +50,27 @@ Find all elements in the array that appear more than ⌊n/3⌋ times.
 - **Optimal:** Extended **Moore’s Voting Algorithm** – can return up to two elements.
 
 ---
+### 3. 3 Sum
+
+Find all unique triplets in the array which sum up to a given target (commonly 0).
+
+**Brute Force Approach**
+- Use three nested loops to generate all triplets.
+- Check if their sum equals the target.
+- Use a set to avoid duplicates.
+- **Time:** O(n³), **Space:** O(1)
+
+**Better Approach**
+- Fix the first element.
+- Use a hash set to find the other two elements.
+- Sort triplet before inserting into a set for uniqueness.
+- **Time:** O(n²), **Space:** O(n)
+
+**Optimal Approach**
+- Sort the array.
+- Use a for loop to fix the first element, then use two-pointer approach to find the remaining two.
+- Skip duplicates to avoid repeating triplets.
+- **Time:** O(n²), **Space:** O(1)
 
 ## 🛠️ Tech Stack
 
