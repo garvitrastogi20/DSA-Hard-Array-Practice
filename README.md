@@ -22,6 +22,9 @@ Each solution includes:
 | 6 | [3Sum](codes/3sumbruteforce.cpp) | Brute Force | O(n³) | O(1) | Triple loop + Set |
 | 7 | [3Sum](codes/3sumbetter.cpp) | Better | O(n²) | O(n) | Hashing |
 | 8 | [3Sum](codes/3sumoptimal.cpp) | Optimal | O(n²) | O(1) | Sorting + Two Pointers |
+| 9 | [4Sum](codes/4sumbruteforce.cpp) | Brute Force | O(n⁴) | O(1) | Four nested loops + Set |
+| 10 | [4Sum](codes/4sumbetter.cpp) | Better | O(n³) | O(n) | Hashing Triplets |
+| 11 | [4Sum](codes/4sumoptimal.cpp) | Optimal | O(n³) | O(1) | Sorting + Two Pointers |
 
 ---
 
@@ -71,6 +74,33 @@ Find all unique triplets in the array which sum up to a given target (commonly 0
 - Use a for loop to fix the first element, then use two-pointer approach to find the remaining two.
 - Skip duplicates to avoid repeating triplets.
 - **Time:** O(n²), **Space:** O(1)
+
+---
+
+  ### 4. 4Sum
+
+Find all unique quadruplets in the array which sum up to a given target.
+
+**Brute Force Approach**
+- Use four nested loops to generate all quadruplets.
+- Check if their sum equals the target.
+- Use a set to avoid duplicates.
+- **Time:** O(n⁴), **Space:** O(1)
+
+**Better Approach**
+- Fix the first two elements.
+- Use a hash set for the remaining two.
+- Sort quadruplets before inserting into a set.
+- **Time:** O(n³), **Space:** O(n)
+
+**Optimal Approach**
+- Sort the array.
+- Fix the first two elements in nested loops.
+- Use two pointers for the remaining two.
+- Skip duplicates to avoid repeating quadruplets.
+- **Time:** O(n³), **Space:** O(1)
+
+---
 
 ## 🛠️ Tech Stack
 
