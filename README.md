@@ -25,6 +25,8 @@ Each solution includes:
 | 9 | [4Sum](codes/4sumbruteforce.cpp) | Brute Force | O(n⁴) | O(1) | Four nested loops + Set |
 | 10 | [4Sum](codes/4sumbetter.cpp) | Better | O(n³) | O(n) | Hashing Triplets |
 | 11 | [4Sum](codes/4sumoptimal.cpp) | Optimal | O(n³) | O(1) | Sorting + Two Pointers |
+| 12 | [Number of Subarrays with XOR = K](codes/subarrayswithxorkbrute.cpp) | Brute Force | O(n²) | O(1) | Nested loops + XOR |
+| 13 | [Number of Subarrays with XOR = K](codes/subarrayswithxorkbetter.cpp) | Better | O(n²) | O(n) | Prefix XOR array |
 
 ---
 
@@ -100,6 +102,21 @@ Find all unique quadruplets in the array which sum up to a given target.
 - Skip duplicates to avoid repeating quadruplets.
 - **Time:** O(n³), **Space:** O(1)
 
+---
+### 5. Number of Subarrays with XOR = K
+
+Count the number of subarrays whose XOR equals a given integer `K`.
+
+**Brute Force Approach**
+- Loop through all subarrays with two nested loops.
+- XOR all elements in each subarray and compare with `K`.
+- **Time:** O(n²), **Space:** O(1)
+
+**Better Approach**
+- Build a prefix XOR array while iterating.
+- For every subarray (i, j), compute XOR as `prefix[j] ^ prefix[i-1]`.
+- Check how many such values match `K`.
+- **Time:** O(n²), **Space:** O(n)
 ---
 
 ## 🛠️ Tech Stack
