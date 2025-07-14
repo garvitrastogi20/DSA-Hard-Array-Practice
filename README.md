@@ -25,8 +25,8 @@ Each solution includes:
 | 9 | [4Sum](codes/4sumbruteforce.cpp) | Brute Force | O(n⁴) | O(1) | Four nested loops + Set |
 | 10 | [4Sum](codes/4sumbetter.cpp) | Better | O(n³) | O(n) | Hashing Triplets |
 | 11 | [4Sum](codes/4sumoptimal.cpp) | Optimal | O(n³) | O(1) | Sorting + Two Pointers |
-| 12 | [Number of Subarrays with XOR = K](codes/subarrayswithxorkbrute.cpp) | Brute Force | O(n²) | O(1) | Nested loops + XOR |
-| 13 | [Number of Subarrays with XOR = K](codes/subarrayswithxorkbetter.cpp) | Better | O(n²) | O(n) | Prefix XOR array |
+| 12 | [Number of Subarrays with XOR = K](codes/numberofsubarraywithxorkbruteforce.cpp) | Brute Force | O(n²) | O(1) | Nested loops + XOR |
+| 13 | [Number of Subarrays with XOR = K](codes/numberofsubarraywithxorkbetter.cpp) | Better | O(n²) | O(n) | Prefix XOR array |
 
 ---
 
