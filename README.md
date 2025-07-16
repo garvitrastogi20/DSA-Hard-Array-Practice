@@ -27,6 +27,8 @@ Each solution includes:
 | 11 | [4Sum](codes/4sumoptimal.cpp) | Optimal | O(n³) | O(1) | Sorting + Two Pointers |
 | 12 | [Number of Subarrays with XOR = K](codes/numberofsubarraywithxorkbruteforce.cpp) | Brute Force | O(n²) | O(1) | Nested loops + XOR |
 | 13 | [Number of Subarrays with XOR = K](codes/numberofsubarraywithxorkbetter.cpp) | Better | O(n²) | O(n) | Prefix XOR array |
+| 14 | [Merge Overlapping Intervals](codes/mergeoverlappingsubintervalsbruteforce.cpp) | Brute Force | O(n²) | O(n) | Compare all + Merge |
+| 15 | [Merge Overlapping Intervals](codes/mergeoverlappingsubintervalsoptimal.cpp) | Optimal | O(n log n) | O(n) | Sorting + Merging |
 
 ---
 
@@ -117,6 +119,25 @@ Count the number of subarrays whose XOR equals a given integer `K`.
 - For every subarray (i, j), compute XOR as `prefix[j] ^ prefix[i-1]`.
 - Check how many such values match `K`.
 - **Time:** O(n²), **Space:** O(n)
+---
+### 6. Merge Overlapping Intervals
+
+Given a list of intervals, merge all overlapping intervals and return an array of the non-overlapping intervals that cover all the intervals in the input.
+
+**Brute Force Approach**
+- Compare each interval with every other to find overlaps.
+- Merge them and keep track of visited.
+- Sort the result at the end.
+- **Time Complexity:** O(n²)  
+- **Space Complexity:** O(n)
+
+**Optimal Approach**
+- Sort the intervals by starting time.
+- Iterate and merge overlapping ones on the fly.
+- Push merged intervals to a new result array.
+- **Time Complexity:** O(n log n)  
+- **Space Complexity:** O(n)
+
 ---
 
 ## 🛠️ Tech Stack
