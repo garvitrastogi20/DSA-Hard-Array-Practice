@@ -29,6 +29,8 @@ Each solution includes:
 | 13 | [Number of Subarrays with XOR = K](codes/numberofsubarraywithxorkbetter.cpp) | Better | O(n²) | O(n) | Prefix XOR array |
 | 14 | [Merge Overlapping Intervals](codes/mergeoverlappingsubintervalsbruteforce.cpp) | Brute Force | O(n²) | O(n) | Compare all + Merge |
 | 15 | [Merge Overlapping Intervals](codes/mergeoverlappingsubintervalsoptimal.cpp) | Optimal | O(n log n) | O(n) | Sorting + Merging |
+| 16 | [Merge Two Sorted Arrays (with Extra Space)](codes/mergesortedarrayswithextraspace.cpp) | Brute | O(n + m) | O(n + m) | Two Pointers |
+| 17 | [Merge Two Sorted Arrays (Without Extra Space)](codes/mergesortedarraysWITHOUTextraspace1.cpp) | Optimal | O((n + m) log(n + m)) | O(1) |Two Pointers|
 
 ---
 
@@ -138,6 +140,23 @@ Given a list of intervals, merge all overlapping intervals and return an array o
 - **Time Complexity:** O(n log n)  
 - **Space Complexity:** O(n)
 
+---
+### 7. Merge Two Sorted Arrays
+
+Given two sorted arrays `arr1[]` and `arr2[]`, merge them **without using extra space**, such that the final merged result remains sorted in both arrays.
+
+**With Extra Space (Brute Approach)**
+- Use two pointers to merge both arrays into a third temporary array.
+- Then copy elements back.
+- **Time:** O(n + m), **Space:** O(n + m)
+
+**Without Extra Space (Optimal Approach: Swap and Sort)**
+- Compare the largest element of `arr1` with the smallest of `arr2`.
+- Swap if out of order.
+- Repeat until elements are roughly partitioned.
+- Then sort both arrays.
+- **Time Complexity:** O(min(n, m) + n log n + m log m)  
+- **Space Complexity:** O(1)
 ---
 
 ## 🛠️ Tech Stack
