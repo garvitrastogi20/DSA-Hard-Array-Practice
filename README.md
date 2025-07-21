@@ -30,7 +30,7 @@ Each solution includes:
 | 14 | [Merge Overlapping Intervals](codes/mergeoverlappingsubintervalsbruteforce.cpp) | Brute Force | O(n²) | O(n) | Compare all + Merge |
 | 15 | [Merge Overlapping Intervals](codes/mergeoverlappingsubintervalsoptimal.cpp) | Optimal | O(n log n) | O(n) | Sorting + Merging |
 | 16 | [Merge Two Sorted Arrays (with Extra Space)](codes/mergesortedarrayswithextraspace.cpp) | Brute | O(n + m) | O(n + m) | Two Pointers |
-| 17 | [Merge Two Sorted Arrays (Without Extra Space)](codes/mergesortedarraysWITHOUTextraspace1.cpp) | Optimal | O((n + m) log(n + m)) | O(1) |Two Pointers|
+| 17 | [Merge Two Sorted Arrays (Without Extra Space)](codes/mergesortedarraysWITHOUTextraspace1.cpp) | Optimal | O((n + m) log(n + m)) | O(1) |Swap and Sort|
 
 ---
 
