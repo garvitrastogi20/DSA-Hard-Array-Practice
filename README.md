@@ -38,6 +38,9 @@ Each solution includes:
 | 22 | [Count Inversions](codes/countinversionoptimal.cpp) | Optimal | O(n log n) | O(n) | Merge Sort (Modified) |
 | 23 | [Reverse Pairs](codes/reversepairsbruteforce.cpp) | Brute Force | O(n²) | O(1) | Nested Loops |
 | 24 | [Reverse Pairs](codes/reversepairsoptimal.cpp) | Optimal | O(n log n) | O(n) | Merge Sort (Modified) |
+| 25 | [Maximum Product Subarray](codes/maximumsubarrayproductbruteforce.cpp) | Brute Force | O(n³) | O(1) | Triple Nested Loops |
+| 26 | [Maximum Product Subarray](codes/maximumsubarrayproductoptimal.cpp) | Optimal | O(n) | O(1) | Prefix and Suffix Product Scan |
+
 
 
 
@@ -247,6 +250,17 @@ A reverse pair is a pair $(i, j)$ where $0 \le i < j < \text{nums.length}$ and $
 - **Space Complexity:** $O(n)$ (due to the temporary array used in the merge step of Merge Sort)
 
 ---
+### 11. Maximum Product Subarray
+
+**Problem:** Find the contiguous subarray within an integer array which has the largest product.
+
+| Approach    | Time Complexity | Space Complexity | Description                    |
+|-------------|-----------------|------------------|-------------------------------|
+| Brute Force | O(n³)           | O(1)             | Triple nested loops checking all subarrays. |
+| Optimal     | O(n)            | O(1)             | Prefix & suffix product scan handling negatives and zeros. |
+
+---
+
 ## 🛠️ Tech Stack
 
 - Language: **C++**
